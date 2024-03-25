@@ -10,12 +10,14 @@ import FAQsSection from './FAQsSection';
 import ContactUsSection from './ContactUsSection';
 import Footer from './Footer';
 import Navbar from './Navbar';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = document.getElementById('root');
 
 if (root) {
   createRoot(root).render(
-    <React.StrictMode>
+
+    <BrowserRouter>
       <Navbar />
       <WelcomeSection />
       <FeaturesSection />
@@ -25,6 +27,7 @@ if (root) {
       <FAQsSection />
       <ContactUsSection />
       <Footer />
-    </React.StrictMode>
+    </BrowserRouter>
+
   );
 }

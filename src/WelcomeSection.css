@@ -1,45 +1,66 @@
 /* Welcome Section styles */
+
+
+.pattern-dots {
+  background-attachment: fixed;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  background-image: radial-gradient(rgb(197, 197, 197) 0.75px, transparent 0.75px), radial-gradient(rgb(197, 197, 197) 0.75px, rgb(255, 255, 255) 0.75px);
+  background-size: 30px 30px;
+  background-position: 0px 0px, 15px 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+.welcome-main-box {
+  margin: auto;
+
+}
+
 .welcome-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-top: 50px; /* Add more vertical spacing */
-    margin-bottom: 40px; /* Add more vertical spacing */
-    flex-direction: column;
-  }
-  
-  .welcome-content {
-    flex: 1;
-  }
-  
-  .welcome-content h1 {
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 72px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: rgb(51, 51, 51);
-    margin-bottom: auto;
-  }
-  
-  .welcome-content p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: rgb(95, 95, 95);  
-  }
-  
-  
-  .center-aligned-image img {
-    max-width: 100%;
-    object-fit: cover;
-    aspect-ratio: 1.4 / 1;
-    margin-top: 40px;
-    width: 100%;
-    border-radius: 20px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  /* Add more vertical spacing */
+  margin-bottom: 40px;
+  /* Add more vertical spacing */
+  flex-direction: column;
+}
+
+.welcome-content {
+  flex: 1;
+}
+
+.welcome-content h1 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 72px;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: rgb(51, 51, 51);
+  margin-bottom: auto;
+}
+
+.welcome-content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: rgb(95, 95, 95);
+}
+
+
+.center-aligned-image img {
+  max-width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1.4/ 1;
+  margin-top: 40px;
+  width: 85%;
+  border-radius: 20px;
+}
 
 @media screen and (max-width: 768px) {
   .welcome-content h1 {
@@ -50,4 +71,4 @@
     color: rgb(51, 51, 51);
     margin-bottom: auto;
   }
-  }
+}

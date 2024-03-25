@@ -1,8 +1,8 @@
 import React from 'react';
 import './FeaturesSection.css';
-import Features1 from "./features1.png";
-import Features2 from "./features2.png";
-import Features3 from "./features3.png";
+import Features1 from "../src/assets/feature1.jpg";
+import Features2 from "../src/assets/feature2.jpg";
+import Features3 from "../src/assets/feature3.jpg";
 
 const FeaturesSection = () => {
   return (
