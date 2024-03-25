@@ -1,0 +1,53 @@
+/* Welcome Section styles */
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 50px; /* Add more vertical spacing */
+    margin-bottom: 40px; /* Add more vertical spacing */
+    flex-direction: column;
+  }
+  
+  .welcome-content {
+    flex: 1;
+  }
+  
+  .welcome-content h1 {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 72px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    margin-bottom: auto;
+  }
+  
+  .welcome-content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: rgb(95, 95, 95);  
+  }
+  
+  
+  .center-aligned-image img {
+    max-width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1.4 / 1;
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+@media screen and (max-width: 768px) {
+  .welcome-content h1 {
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 72px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    margin-bottom: auto;
+  }
+  }

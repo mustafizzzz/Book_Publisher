@@ -1,0 +1,299 @@
+/* LandingPage.css */
+
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: x-large;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.sectiontitles {
+  text-align: center;
+}
+/* Navbar styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav-items li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* Welcome Section styles */
+#welcome {
+  text-align: center;
+  margin-top: 100px; /* Add more vertical spacing */
+  margin-bottom: 50px; /* Add more vertical spacing */
+}
+
+/* Center Aligned Image styles */
+.center-aligned-image {
+  text-align: center;
+  margin-bottom: 50px; /* Add more vertical spacing */
+}
+
+.center-aligned-image img {
+  max-width: 50%; /* Make images a little smaller */
+}
+
+/* Features and Services Section styles */
+#features,
+#services,
+#trusted-partners,
+#testimonials,
+#faqs,
+#contact-us {
+  text-align: center; /* Center-align section titles */
+  margin-top: 100px; /* Add more vertical spacing */
+  margin-bottom: 100px; /* Add more vertical spacing */
+}
+
+#features h2,
+#services h2,
+#trusted-partners h2,
+#testimonials h2,
+#faqs h2,
+#contact-us h2 {
+  margin-bottom: 20px; /* Add spacing between section title and content */
+}
+
+#features,
+#services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature,
+.service {
+  text-align: center;
+  width: 45%;
+  margin-bottom: 50px; /* Add more vertical spacing */
+}
+
+.feature img,
+.service img,
+.partner img {
+  max-width: 70%; /* Make images a little smaller */
+  max-height: 10%;
+}
+
+/* Trusted Partners Section styles */
+#services, #features, #trusted-partners {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+#trusted-partners h2{
+  display: block;
+  text-align: center;
+}
+
+.partner {
+  text-align: center;
+  width: 30%;
+}
+
+/* Testimonials Section styles */
+#testimonials {
+  text-align: center;
+}
+
+.testimonial {
+  margin-bottom: 50px; /* Add more vertical spacing */
+}
+
+
+/* Contact Us Section styles */
+#contact-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px; /* Add more vertical spacing */
+  margin-bottom: 100px; /* Add more vertical spacing */
+}
+
+#contact-us h2 {
+  text-align: left; /* Align title to left for Contact Us section */
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 400px; /* Limit form width for responsiveness */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  margin-top: 100px; /* Add more vertical spacing */
+  padding: 20px 0;
+}
+
+.nav-items {
+  flex-direction: row;
+  position: static;
+  height: auto;
+  width: auto;
+  background-color: transparent;
+}
+
+.nav-items ul {
+  flex-direction: row;
+}
+
+.nav-items ul li {
+  margin: 0 10px;
+}
+
+.burger-menu {
+  display: none; /* Hide burger menu on larger screens */
+}
+
+/* FAQ Section styles */
+#faqs {
+  text-align: center;
+}
+
+.faq-item {
+  margin-bottom: 50px; /* Add more vertical spacing */
+}
+
+.faq-item h3 {
+  cursor: pointer;
+}
+
+/* Accordion style */
+.faq-item p {
+  display: block;
+}
+
+.faq-item.active p {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .feature,
+  .service,
+  .partner {
+    width: 100%; /* Set full width for smaller screens */
+  }
+  #services, #features, #trusted-partners {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact-us{
+    flex-direction: column;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    font-size: 1.5rem; /* Adjust font size as needed */
+  }
+  
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff; /* Navbar background color */
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .nav-items.active {
+    right: 0;
+  }
+  
+  .nav-items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-items ul li {
+    margin: 20px 0;
+  }
+  
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #333; /* Color of the burger menu bars */
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  /* Fade out the second bar */
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate third bar */
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}

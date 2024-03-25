@@ -1,0 +1,73 @@
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px; /* Add spacing from top, left, and right */
+  }
+  
+  .logo {
+    color: rgb(224, 178, 38);
+    font-size: 30px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .nav-items {
+    list-style: none;
+    display: flex;
+    font-size: large;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+  
+  .nav-items li {
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  
+  .burger-menu {
+    display: none; /* Hide burger menu on larger screens */
+  }
+  
+  .burger-menu .bar1, .burger-menu .bar2, .burger-menu .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+  
+    .nav-items {
+      display: none;
+    }
+  
+    .burger-menu {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+  
+    .open .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .open .bar2 {
+      opacity: 0;
+    }
+  
+    .open .bar3 {
+      -webkit-transform: rotate(45deg) translate(-5px, -6px);
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  

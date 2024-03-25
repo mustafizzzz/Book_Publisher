@@ -1,0 +1,32 @@
+Welcome Section:
+
+WelcomeSection.js
+WelcomeSection.css
+Features Section:
+
+FeaturesSection.js
+FeaturesSection.css
+Services Section:
+
+ServicesSection.js
+ServicesSection.css
+Trusted Partners Section:
+
+TrustedPartnersSection.js
+TrustedPartnersSection.css
+Testimonials Section:
+
+TestimonialsSection.js
+TestimonialsSection.css
+FAQs Section:
+
+FAQsSection.js
+FAQsSection.css
+Contact Us Section:
+
+ContactUsSection.js
+ContactUsSection.css
+Footer Section:
+
+Footer.js
+Footer.css
