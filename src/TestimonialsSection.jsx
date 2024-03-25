@@ -4,35 +4,35 @@ import './TestimonialsSection.css';
 import img from "./placeholder1.jpg";
 
 const TestimonialsSection = () => {
-  const testimonials = [
+  const clientReviews = [
     {
       id: 1,
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in tortor vel magna eleifend fringilla.",
+      content: "Excellent service! The team was very professional and delivered high-quality work on time. Highly recommend!",
       author: "John Doe"
     },
     {
       id: 2,
-      content: "Suspendisse potenti. Vivamus semper laoreet libero vel finibus. Mauris vel lectus non ante laoreet vehicula.",
+      content: "I was impressed with the attention to detail and the level of communication throughout the project. Great experience!",
       author: "Jane Smith"
     },
     {
       id: 3,
-      content: "Praesent nec semper ligula. Nulla ac massa eu sapien interdum rutrum. Integer ultrices odio at justo facilisis volutpat.",
+      content: "Outstanding job! The final result exceeded my expectations. Will definitely work with them again.",
       author: "Michael Johnson"
     },
     {
       id: 4,
-      content: "Fusce fringilla vitae lorem vel sodales. Aliquam luctus libero vel justo bibendum, nec fermentum metus fringilla.",
+      content: "Professional and reliable. They understood my requirements and delivered exactly what I needed. Thank you!",
       author: "Emily Williams"
     },
     {
       id: 5,
-      content: "Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum.",
+      content: "Amazing work! The team went above and beyond to ensure everything was perfect. Very happy with the outcome.",
       author: "David Brown"
     },
     {
       id: 6,
-      content: "In hac habitasse platea dictumst. Nunc at turpis eget dolor dictum maximus vel ut diam.",
+      content: "Exceptional service! They provided valuable insights and delivered exceptional results. Highly recommended!",
       author: "Sarah Miller"
     }
   ];
@@ -42,14 +42,15 @@ const TestimonialsSection = () => {
 
   // Split testimonials into chunks based on the number of testimonials per slide
   const testimonialChunks = [];
-  for (let i = 0; i < testimonials.length; i += testimonialsPerSlide) {
-    testimonialChunks.push(testimonials.slice(i, i + testimonialsPerSlide));
+  for (let i = 0; i < clientReviews.length; i += testimonialsPerSlide) {
+    testimonialChunks.push(clientReviews.slice(i, i + testimonialsPerSlide));
   }
 
   return (
     <section id="testimonials" className="testimonials-section">
       <p>What our clients say</p>
-      <h2>Testimonials</h2>
+      <h2>Client Reviews</h2>
+
       <Carousel>
         {testimonialChunks.map((chunk, index) => (
           <Carousel.Item key={index}>
@@ -60,7 +61,7 @@ const TestimonialsSection = () => {
                     <div className="stars">
                       <span role="img" aria-label="star">⭐️⭐️⭐️⭐️⭐️</span>
                     </div>
-                    <h1>subject</h1>
+                    <h1>Subject</h1>
                     <p>{testimonial.content}</p>
 
                     <div className="author-profile">
@@ -76,7 +77,10 @@ const TestimonialsSection = () => {
             </div>
           </Carousel.Item>
         ))}
+
       </Carousel>
+
+
     </section>
   );
 };

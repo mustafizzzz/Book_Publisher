@@ -8,7 +8,7 @@ const FeaturesSection = () => {
   return (
     <section id="features" className="features-section">
       <div className="feature-heading">
-        <p>Services provided by Bookpublisher</p>
+        <p>Services provided by Blossom Book Publication</p>
         <h2>Features</h2>
       </div>
       <div className="features-container">

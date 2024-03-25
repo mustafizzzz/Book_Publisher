@@ -9,7 +9,7 @@
 }
 
 .logo-img img {
-  width: 6.5rem;
+  width: 5.1rem;
 }
 
 .logo-img {
@@ -31,4 +31,5 @@
 
 .navbar-collapse {
   flex-grow: 0;
+  color: #464646;
 }

@@ -11,6 +11,7 @@ import ContactUsSection from './ContactUsSection';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import { BrowserRouter } from 'react-router-dom';
+import WhatsApp from './WhatsApp/WhatsApp';
 
 const root = document.getElementById('root');
 
@@ -22,11 +23,12 @@ if (root) {
       <WelcomeSection />
       <FeaturesSection />
       <ServicesSection />
-      <TrustedPartnersSection />
+      {/* <TrustedPartnersSection /> */}
       <TestimonialsSection />
       <FAQsSection />
       <ContactUsSection />
       <Footer />
+      <WhatsApp />
     </BrowserRouter>
 
   );

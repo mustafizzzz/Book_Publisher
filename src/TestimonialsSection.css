@@ -9,6 +9,7 @@
   margin-top: 8px;
   margin-bottom: 0px;
 }
+
 .testimonials-section p {
   font-size: 16px;
   font-weight: 500;
@@ -17,127 +18,133 @@
   font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
   color: rgb(224, 178, 38);
 }
+
 .carousel {
-    position: relative;
-  }
-  
-  .carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  .carousel-indicators {
-    display: none;
-  }
-  
-  .carousel-item {
-    position: relative;
-    display: none;
-    margin: auto;
-    width: 100%;
-    transition: tranform 0.1ms ease-in-out;
-  }
-  
-  .carousel-item.active {
-    display: block;
-  }
-  
-  .carousel-item-next,
-  .carousel-item-prev,
-  .carousel-item.active {
-    display: flex;
-  }
-  
-  .carousel-item-next,
-  .carousel-item-prev {
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-  
-  .carousel-item-next.carousel-item-left,
-  .carousel-item-prev.carousel-item-right {
-    transform: translateX(0);
-  }
-  
-  .carousel-item-next.active,
-  .carousel-item-prev.active {
-    transform: translateX(0);
-  }
-  
-  .carousel-control-prev,
-  .carousel-control-next {
-    position: absolute;
-    top: 50%;
-    z-index: 5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #333;
-    font-size: 20px;
-    transform: translateY(-50%);
-  }
-  
-  .carousel-control-prev:hover,
-  .carousel-control-next:hover {
-    color: #000;
-  }
-  
-  .carousel-control-prev {
-    left: 15px;
-  }
-  
-  .carousel-control-next {
-    right: 15px;
-  }
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  margin: auto;
+  width: 100%;
+  transition: tranform 0.1ms ease-in-out;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+  transform: translateX(0);
+}
+
+.carousel-item-next.active,
+.carousel-item-prev.active {
+  transform: translateX(0);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  font-size: 20px;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: #000;
+}
+
+.carousel-control-prev {
+  left: 15px;
+}
+
+.carousel-control-next {
+  right: 15px;
+}
+
 /* Testimonials Section styles */
 
 /* Testimonial card container */
 .testimonial-card-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    margin: 100px;
-  }
-  
-  /* Testimonial card */
-  .testimonial-card {
-    width: calc(33.333% - 20px); /* Adjust width based on desired number of cards per row */
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-  
-  /* Testimonial card content */
-  .testimonial-content {
-    font-style: italic;
-  }
-  
-  /* Testimonial card author */
-  .testimonial-author {
-    margin-top: 10px;
-    font-weight: bold;
-  }
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 100px;
+}
 
-  .testimonial-card-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Testimonial card */
-  .testimonial-card {
-    width: 300px; /* Adjust card width as needed */
-    margin: 0 10px; /* Adjust margin for spacing */
-  }
+/* Testimonial card */
+.testimonial-card {
+  width: calc(33.333% - 20px);
+  /* Adjust width based on desired number of cards per row */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
 
-  /* Testimonials Section styles */
+/* Testimonial card content */
+.testimonial-content {
+  font-style: italic;
+}
+
+/* Testimonial card author */
+.testimonial-author {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.testimonial-card-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Testimonial card */
+.testimonial-card {
+  width: 300px;
+  /* Adjust card width as needed */
+  margin: 0 10px;
+  /* Adjust margin for spacing */
+}
+
+/* Testimonials Section styles */
 .testimonials-section {
   text-align: center;
   margin-top: 100px;
@@ -152,6 +159,7 @@
 .testimonial-card {
   width: 60%;
 }
+
 .testimonial-card p {
   font-size: 16px;
   font-weight: 400;
@@ -167,7 +175,8 @@
   letter-spacing: -0.03em;
   color: #4a4a4a;
 }
-.author-info{
+
+.author-info {
   color: #4a4a4a;
   font-size: 16px;
   font-weight: 500;
@@ -200,7 +209,8 @@
   margin: 0;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   display: none;
 }
 
@@ -209,5 +219,5 @@
     margin: auto;
     margin-top: 40px;
   }
-  
+
 }

@@ -1,12 +1,16 @@
 /* Footer styles */
 .footer-section {
-    text-align: center;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    margin-top: 100px; /* Add more vertical spacing */
-    padding: 64px 0;
-    background-color: rgb(110, 87, 19); /* Add background color */
-  }
-.footer-section h1, p{
+  text-align: center;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin-top: 100px;
+  /* Add more vertical spacing */
+  padding: 64px 0;
+  background-color: rgb(110, 87, 19);
+  /* Add background color */
+}
+
+.footer-section h1,
+p {
   color: antiquewhite;
 }
 
@@ -18,7 +22,9 @@
   gap: 10px;
   font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-.footer-compo h1, para{
+
+.footer-compo h1,
+para {
   margin: auto;
 }
 
@@ -41,4 +47,8 @@
   flex-wrap: nowrap;
   justify-content: space-around;
   padding-bottom: 30px;
+}
+
+.footer-main p li {
+  list-style: none;
 }
