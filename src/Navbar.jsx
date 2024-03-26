@@ -20,7 +20,7 @@ const Navbar = () => {
 
       <div className="container-fluid px-md-5 px-2">
 
-        <div className="logo-img d-flex align-items-center">
+        <div className="logo-img d-flex align-items-center flex-column flex-md-row">
           <img src={logo2} alt="logo" />
           <p className='logo-text m-0 p-0'>Blossom Book Publication</p>
         </div>

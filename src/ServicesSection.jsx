@@ -5,6 +5,7 @@ import Service2Img from "./features2.png";
 import Service3Img from "./features3.png";
 import Modal from './ModalFrom';
 import ModalFrom from './ModalFrom';
+import { Button } from '@mui/material';
 
 const ServicesSection = () => {
 
@@ -12,15 +13,25 @@ const ServicesSection = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  //pdf download
+  const [pdfUrl] = useState('/pdf_assets/pdf1.pdf'); // Path to your PDF file
+
+  const handleDownloadPDF = () => {
+    const anchor = document.createElement('a');
+    anchor.href = pdfUrl;
+    anchor.download = 'your-pdf-filename.pdf'; // Specify the filename here
+    anchor.click();
+  };
+
 
   return (
     <section id="services" className="services-section">
-      <p className='fs-4'>Blossom Book Publication - Services in Mumbai</p>
-      <h2 className='mb-5'>Services</h2>
+      <p className='fs-3'>Blossom Book Publication - Services in Mumbai</p>
+      <h2 className='mb-5'>Passionate About Handwriting Work</h2>
 
-      <div className='provided-services row  m-0 p-0 justify-content-around mb-5'>
+      <div className='provided-services row  m-0 p-0 justify-content-around mb-5 '>
 
-        <div className='service col-md-3 border shadow'>
+        <div className='service col-md-3 col-11 border shadow mb-md-0 mb-5 '>
 
           <h1 className='text-center fw-bold'>Basic Plan</h1>
           <h2>₹5,500/-</h2>
@@ -33,12 +44,16 @@ const ServicesSection = () => {
             <li>Book Security (Compulsory Amount): ₹1,050/-</li>
           </ul>
           <div className="service-btn d-flex justify-content-center">
-
             <button onClick={handleOpen}>Choose plan</button>
           </div>
+          <div className="downloade-pdf-btn d-flex justify-content-center">
+            <button className='btn btn-primary w-50' onClick={handleDownloadPDF}>Download Sample</button>
+          </div>
+
+
         </div>
 
-        <div className='service col-md-3 border shadow'>
+        <div className='service col-md-3 col-11 border shadow  mb-md-0 mb-5 '>
 
           <h1 className='text-center fw-bold'>Medium Plan</h1>
           <h2>₹12,500/-</h2>
@@ -56,7 +71,7 @@ const ServicesSection = () => {
           </div>
         </div>
 
-        <div className='service col-md-3 border shadow'>
+        <div className='service col-md-3 col-11 border shadow  mb-md-0 mb-5'>
 
           <h1 className='text-center fw-bold'>Pro Plan</h1>
           <h2>₹17,500</h2>
@@ -79,7 +94,7 @@ const ServicesSection = () => {
 
       <div className='provided-services row  m-0 p-0 justify-content-evenly mb-5'>
 
-        <div className='service col-md-3 border shadow'>
+        <div className='service col-md-3 col-11 border shadow mb-md-0 mb-5'>
           <h1 className='text-center fw-bold'>हिंदी योजना</h1>
           <h2>₹10,500/-/-</h2>
           <h2>भुगतान</h2>
@@ -95,7 +110,7 @@ const ServicesSection = () => {
           </div>
         </div>
 
-        <div className='service col-md-3 border shadow'>
+        <div className='service col-md-3  col-11 border shadow mb-md-0 mb-5'>
 
           <h1 className='text-center fw-bold'>Monthly Plan</h1>
           <h2>₹27,000/-</h2>
