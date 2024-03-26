@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ContactUsSection.css';
-import { db } from './firebase';
-import { set, ref } from 'firebase/database';
+import { set, ref, push } from 'firebase/database';
+import db from './firebase';
 
 const ContactUsSection = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +21,8 @@ const ContactUsSection = () => {
     e.preventDefault();
     console.log(formData);
     try {
-      await set(ref(db, 'contactUs'), formData);
+      const newContactRef = push(ref(db, 'contactUs')); // Generate unique key
+      await set(newContactRef, formData); // Set data at the new unique key
       alert('Your message has been sent successfully!');
       setFormData({
         name: '',

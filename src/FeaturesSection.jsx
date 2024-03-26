@@ -38,7 +38,7 @@ const FeaturesSection = () => {
                       start={0}
                       end={423}
                       delay={0}
-                      duration={8}
+                      duration={9}
                     >
                     </CountUp>
                   }+
@@ -88,7 +88,7 @@ const FeaturesSection = () => {
                       start={0}
                       end={412}
                       delay={0}
-                      duration={8}
+                      duration={6}
                       useEasing={true}
                     >
                     </CountUp>

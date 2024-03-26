@@ -35,7 +35,7 @@ const ServicesSection = () => {
 
       <div className='provided-services row  m-0 p-0 justify-content-around mb-5 '>
 
-        <div className='service col-md-3 col-11 border shadow mb-md-0 mb-5 '>
+        <div className='service col-lg-3 col-11 border shadow mb-lg-0 mb-5 '>
 
           <h1 className='text-center fw-bold'>Basic Plan</h1>
           <h2>₹5,500/-</h2>
@@ -57,7 +57,7 @@ const ServicesSection = () => {
 
         </div>
 
-        <div className='service service-medium col-md-3 col-11 shadow  mb-md-0 mb-5 '>
+        <div className='service service-medium col-lg-3 col-11 shadow  mb-lg-0 mb-5 '>
 
           <h1 className='text-center fw-bold'>Medium Plan</h1>
           <h2>₹12,500/-</h2>
@@ -77,7 +77,7 @@ const ServicesSection = () => {
           </div>
         </div>
 
-        <div className='service col-md-3 col-11 border shadow  mb-md-0 mb-5'>
+        <div className='service col-lg-3 col-11 border shadow  mb-lg-0 mb-5'>
 
           <h1 className='text-center fw-bold'>Pro Plan</h1>
           <h2>₹17,500</h2>
@@ -103,9 +103,9 @@ const ServicesSection = () => {
 
       <div className='provided-services row  m-0 p-0 justify-content-evenly mb-5'>
 
-        <div className='service col-md-3 col-11 border shadow mb-md-0 mb-5'>
+        <div className='service col-lg-3 col-11 border shadow mb-lg-0 mb-5'>
           <h1 className='text-center fw-bold'>हिंदी योजना</h1>
-          <h2>₹10,500/-/-</h2>
+          <h2>₹10,500/-</h2>
           <h2>भुगतान</h2>
           <p>आपको सभी निर्देशों (सामग्री) को जो उपन्यास पुस्तक में हम प्रदान करते हैं, सभी कैपिटल अक्षरों में कॉपी करना होगा।</p>
           <ul className='plan-info'>
@@ -122,7 +122,7 @@ const ServicesSection = () => {
           </div>
         </div>
 
-        <div className='service col-md-3  col-11 border shadow mb-md-0 mb-5'>
+        <div className='service col-lg-3  col-11 border shadow mb-lg-0 mb-5'>
 
           <h1 className='text-center fw-bold'>Monthly Plan</h1>
           <h2>₹27,000/-</h2>
@@ -147,6 +147,7 @@ const ServicesSection = () => {
 
         <ModalFrom open={open} handleClose={handleClose} />
       </div>
+
     </section >
   );
 };

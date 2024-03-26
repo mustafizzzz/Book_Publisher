@@ -7,6 +7,8 @@ import './Modal.css';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import { useState } from 'react';
+import { push, ref, set } from 'firebase/database';
+import db from './firebase';
 
 const ModalFrom = ({ open, handleClose }) => {
 
@@ -37,18 +39,15 @@ const ModalFrom = ({ open, handleClose }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    age: '',
     phoneNumber: '',
     city: '',
-    state: ''
   });
 
   const [validationErrors, setValidationErrors] = useState({
     name: '',
-    age: '',
+    eamil: '',
     phoneNumber: '',
     city: '',
-    state: ''
   });
 
   const handleChange = (e) => {
@@ -80,11 +79,33 @@ const ModalFrom = ({ open, handleClose }) => {
     Object.keys(formData).forEach(key => {
       if (!formData[key]) {
         errors[key] = `${key.charAt(0).toUpperCase() + key.slice(1)} is required`;
+        return;
       }
     });
+    if (!/^\d{10}$/.test(formData.phoneNumber)) {
+      errors.phoneNumber = 'Phone number must be 10 digits';
+      // alert('Phone number must be 10 digits');
+      // return;
+    }
     setValidationErrors(errors);
     if (Object.keys(errors).length === 0) {
       console.log('Form submitted successfully!');
+      try {
+        const newPlanEnquiryRef = push(ref
+          (db, 'PlansEnquiryData')); // Generate unique key
+        set(newPlanEnquiryRef, formData); // Save form data under the unique key
+        alert('Your enquiry has been submitted successfully!');
+        setFormData({
+          name: '',
+          email: '',
+          phoneNumber: '',
+          city: ''
+        });
+      } catch (error) {
+        alert('Something went wrong! Please try again later.');
+        console.error("Error adding enquiry: ", error);
+      }
+
     }
   };
 
@@ -126,7 +147,7 @@ const ModalFrom = ({ open, handleClose }) => {
               </div>
               <div className="btn-box-detail-plan d-flex justify-content-end">
 
-                <button type="submit" className="btn btn-dark">Save changes</button>
+                <button type="submit" className="btn btn-dark btn-lg">Submit</button>
               </div>
             </form>
           </div>
@@ -135,6 +156,7 @@ const ModalFrom = ({ open, handleClose }) => {
       </Box>
     </Modal>
   );
-};
+}
+
 
 export default ModalFrom;

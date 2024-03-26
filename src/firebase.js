@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
+import { getDatabase } from "firebase/database";
 import { getStorage } from "firebase/storage";
 
 
@@ -9,13 +9,17 @@ const firebaseConfig = {
   authDomain: "blossomdatabase.firebaseapp.com",
   projectId: "blossomdatabase",
   storageBucket: "blossomdatabase.appspot.com",
-  databaseURL: "https://blossomdatabase-default-rtdb.firebaseio.com",
   messagingSenderId: "750699402529",
   appId: "1:750699402529:web:7d791b7294fb69ab275a60",
+  databaseURL: "https://blossomdatabase-default-rtdb.firebaseio.com",
   measurementId: "G-RH8YQ26R8B"
 };
 
-const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
-export const auth = getAuth();
-export const storage = getStorage(app);
+const firebaseApp = initializeApp(firebaseConfig);
+
+// Get a reference to the Firebase Realtime Database
+const db = getDatabase(firebaseApp);
+export const storage = getStorage(firebaseApp);
+export const auth = getAuth(firebaseApp);
+
+export default db;
