@@ -6,6 +6,11 @@ import Service3Img from "./features3.png";
 import Modal from './ModalFrom';
 import ModalFrom from './ModalFrom';
 import { Button } from '@mui/material';
+import pdf1 from '../src/pdf_assets/Day_5.pdf';
+import pdf2 from '../src/pdf_assets/Day_7.pdf';
+import pdf3 from '../src/pdf_assets/Day_10_hindi.pdf';
+import pdf4 from '../src/pdf_assets/Day_15.pdf';
+import pdf5 from '../src/pdf_assets/Day_25.pdf';
 
 const ServicesSection = () => {
 
@@ -14,12 +19,11 @@ const ServicesSection = () => {
   const handleClose = () => setOpen(false);
 
   //pdf download
-  const [pdfUrl] = useState('/pdf_assets/pdf1.pdf'); // Path to your PDF file
-
-  const handleDownloadPDF = () => {
+  const handleDownloadPDF = (pdf, fileName) => {
     const anchor = document.createElement('a');
-    anchor.href = pdfUrl;
-    anchor.download = 'your-pdf-filename.pdf'; // Specify the filename here
+    anchor.href = pdf;
+    anchor.download = `${fileName}.pdf`;
+    // Provide a default name for the downloaded file
     anchor.click();
   };
 
@@ -46,14 +50,14 @@ const ServicesSection = () => {
           <div className="service-btn d-flex justify-content-center">
             <button onClick={handleOpen}>Choose plan</button>
           </div>
-          <div className="downloade-pdf-btn d-flex justify-content-center">
-            <button className='btn btn-primary w-50' onClick={handleDownloadPDF}>Download Sample</button>
+          <div className="downloade-pdf-btn d-flex justify-content-center my-md-0 my-2">
+            <button className='btn btn-warning w-50' onClick={() => handleDownloadPDF(pdf1, 'Basic_Plan')}>Download Sample</button>
           </div>
 
 
         </div>
 
-        <div className='service col-md-3 col-11 border shadow  mb-md-0 mb-5 '>
+        <div className='service service-medium col-md-3 col-11 shadow  mb-md-0 mb-5 '>
 
           <h1 className='text-center fw-bold'>Medium Plan</h1>
           <h2>₹12,500/-</h2>
@@ -66,8 +70,10 @@ const ServicesSection = () => {
             <li>Book Security (Compulsory Amount): ₹1,650/-</li>
           </ul>
           <div className="service-btn d-flex justify-content-center">
-
             <button onClick={handleOpen}>Choose plan</button>
+          </div>
+          <div className="downloade-pdf-btn d-flex justify-content-center my-md-0 my-2">
+            <button className='btn btn-warning w-50' onClick={() => handleDownloadPDF(pdf2, 'Medium_Plan')}>Download Sample</button>
           </div>
         </div>
 
@@ -80,12 +86,15 @@ const ServicesSection = () => {
           <ul className='plan-info'>
             <li>Total Pages: 170</li>
             <li>Novel book pages 130 front and 130 back</li>
-            <li>Time Duration: 10 days</li>
+            <li>Time Duration: 15 days</li>
             <li>Book Security (Compulsory Amount): ₹1,750/-</li>
           </ul>
           <div className="service-btn d-flex justify-content-center">
 
             <button onClick={handleOpen}>Choose plan</button>
+          </div>
+          <div className="downloade-pdf-btn d-flex justify-content-center my-md-0 my-2">
+            <button className='btn btn-warning w-50' onClick={() => handleDownloadPDF(pdf4, 'Pro_Plan')}>Download Sample</button>
           </div>
         </div>
 
@@ -108,6 +117,9 @@ const ServicesSection = () => {
           <div className="service-btn d-flex justify-content-center">
             <button onClick={handleOpen}>योजना चुनें</button>
           </div>
+          <div className="downloade-pdf-btn d-flex justify-content-center my-md-0 my-2">
+            <button className='btn btn-warning w-50' onClick={() => handleDownloadPDF(pdf3, 'Hindi_Plan')}>Download Sample</button>
+          </div>
         </div>
 
         <div className='service col-md-3  col-11 border shadow mb-md-0 mb-5'>
@@ -126,13 +138,16 @@ const ServicesSection = () => {
 
             <button onClick={handleOpen}>Choose plan</button>
           </div>
+          <div className="downloade-pdf-btn d-flex justify-content-center my-md-0 my-2">
+            <button className='btn btn-warning w-50' onClick={() => handleDownloadPDF(pdf5, 'Monthly_Plan')}>Download Sample</button>
+          </div>
         </div>
 
 
 
         <ModalFrom open={open} handleClose={handleClose} />
       </div>
-    </section>
+    </section >
   );
 };
 

@@ -74,7 +74,7 @@ const Footer = () => {
               <p><i className="fas fa-home me-3" />Military Rd, Marol, Andheri East, Mumbai, Maharashtra 400059</p>
               <p>
                 <i className="fas fa-envelope me-3" />
-                info@example.com
+                blossombookpublication@gmail.com
               </p>
               <p><i className="fas fa-phone me-3" />+919793186798</p>
             </div>
@@ -87,7 +87,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className="text-center p-40" style={{ background: '#363636' }}>
         © {new Date().getFullYear()} Copyright:
-        <Link className="text-reset fw-bold" to="https://bollossomBookPublication.web.app/">bollossomBookPublication.web.app</Link>
+        <Link className="text-reset fw-bold" to="https://blossomBookPublication.web.app/">blossomBookPublication.web.app</Link>
       </div>
       {/* Copyright */}
     </footer>

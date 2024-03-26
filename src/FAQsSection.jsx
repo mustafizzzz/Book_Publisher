@@ -51,7 +51,7 @@ const FAQsSection = () => {
   };
 
   return (
-    <section id="faqs" className="faqs-section">
+    <section id="faqs" className="faqs-section px-md-1 px-4">
       <p>frequently asked questions</p>
       <h2>FAQs</h2>
       {faqs.map(faq => (

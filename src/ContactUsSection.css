@@ -1,91 +1,95 @@
 /* Contact Us Section styles */
 #contact-us {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 100px; /* Add more vertical spacing */
-    margin-bottom: 100px; /* Add more vertical spacing */
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-  
-  #contact-us h1 {
-    text-align: left;
-    font-size: 42px;
-    font-weight: 400;
-    line-height: 48px;
-    letter-spacing: -0.04em;
-  }
-  
-  .contact-form {
-    width: 100%;
-    max-width: 400px; /* Limit form width for responsiveness */
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    outline: rgb(227, 227, 227) solid 2px;
-    border-style: inherit ;
-    border-radius: 10px;
-    resize: none;
-  }
-  textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    outline: rgb(227, 227, 227) solid 2px;
-    border-style: inherit;
-    resize: none;
-    border-radius: 10px;
-  }
-  button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: rgb(237 242 247);
-    color: #000000;
-    align-items: center;
-    border-radius: 10px;
-    border-style: none;
-    cursor: pointer;
-    padding-left: 45%;
-    padding-right: 45%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  /* Add more vertical spacing */
+  margin-bottom: 100px;
+  /* Add more vertical spacing */
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
 
-  .contact-info h2 {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: -0.03em;
-    color: rgb(224, 178, 38);
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-  .contact-info p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    color: #4a4a4a;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
+#contact-us h1 {
+  text-align: left;
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 48px;
+  letter-spacing: -0.04em;
+  margin-top: 1.5rem;
+}
 
-  @media screen and (max-width: 768px) {
-    .contact-us-section {
-      flex-direction: column;
-    }
+.contact-form {
+  width: 100%;
+  max-width: 400px;
+  /* Limit form width for responsiveness */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: rgb(227, 227, 227) solid 2px;
+  border-style: inherit;
+  border-radius: 10px;
+  resize: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: rgb(227, 227, 227) solid 2px;
+  border-style: inherit;
+  resize: none;
+  border-radius: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgb(237 242 247);
+  color: #000000;
+  align-items: center;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+  padding-left: 45%;
+  padding-right: 45%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 16px;
+}
+
+
+.contact-info h2 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  color: rgb(224, 178, 38);
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.contact-info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #4a4a4a;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us-section {
+    flex-direction: column;
   }
+}

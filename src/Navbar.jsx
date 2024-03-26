@@ -6,8 +6,8 @@ import './Navbar.css';
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('home');
 
-  const handleClick = (sectionId) => {
-    setActiveLink(sectionId);
+  const handleClick = (sectionId, toActive) => {
+    setActiveLink(toActive);
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
@@ -32,14 +32,18 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <span className={`nav-link ${activeLink === 'welcome' ? 'active' : ''}`} onClick={() => handleClick('welcome')}>Home</span>
+              <span className={`nav-link ${activeLink === 'welcome' ? 'active' : ''}`} onClick={() => handleClick('welcome', 'welcome')}>Home</span>
             </li>
             <li className="nav-item">
-              <span className={`nav-link ${activeLink === 'about' ? 'active' : ''}`} onClick={() => handleClick('about')}>About</span>
+              <span className={`nav-link ${activeLink === 'about' ? 'active' : ''}`} onClick={() => handleClick('features', 'about')}>About</span>
             </li>
             <li className="nav-item">
-              <span className={`nav-link ${activeLink === 'contact-us' ? 'active' : ''}`} onClick={() => handleClick('contact-us')}>Contact</span>
+              <span className={`nav-link ${activeLink === 'plans' ? 'active' : ''}`} onClick={() => handleClick('services', 'plans')}>Plans</span>
             </li>
+            <li className="nav-item">
+              <span className={`nav-link ${activeLink === 'contact-us' ? 'active' : ''}`} onClick={() => handleClick('contact-us', 'contact-us')}>Contact</span>
+            </li>
+
           </ul>
         </div>
 

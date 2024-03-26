@@ -16,12 +16,23 @@ const ModalFrom = ({ open, handleClose }) => {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 500,
+    width: '65%',
     bgcolor: 'background.paper',
     borderRadius: 2,
     boxShadow: 5,
     p: 0,
   };
+
+  const screenSize = window.innerWidth;
+
+  // Adjust the width based on screen size
+  if (screenSize >= 992) { // LG screen
+    style.width = '40%';
+  } else if (screenSize >= 768 && screenSize < 992) { // MD screen
+    style.width = '60%';
+  } else { // SM screen
+    style.width = '85%';
+  }
 
   const [formData, setFormData] = useState({
     name: '',

@@ -64,3 +64,8 @@
 .downloade-pdf-btn button {
   border-radius: 0.6rem;
 }
+
+.service-medium {
+  border-top: 5px solid #ffc107;
+  /* Primary color */
+}

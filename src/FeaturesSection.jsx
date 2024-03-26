@@ -26,7 +26,7 @@ const FeaturesSection = () => {
 
             <div className="feature">
               <img src={Features1} alt="Feature 1" />
-              <h3 className='fw-bold mt-5 mb-3'>Book Publication</h3>
+              <h3 className='fw-bold mt-lg-4 mt-3 mb-3'>Book Publication</h3>
               <p className='m-0 mb-md-5 mb-2'>Monetize your writing hassle-free with our book publication services.</p>
 
               <div className='counter-count d-flex text-center justify-content-evenly  align-items-center px-md-4 px-5'>
@@ -38,7 +38,7 @@ const FeaturesSection = () => {
                       start={0}
                       end={423}
                       delay={0}
-                      duration={5}
+                      duration={8}
                     >
                     </CountUp>
                   }+
@@ -50,7 +50,7 @@ const FeaturesSection = () => {
 
             <div className="feature">
               <img src={Features2} alt="Feature 2" />
-              <h3 className='fw-bold mt-5 mb-3'>Book Developement</h3>
+              <h3 className='fw-bold mt-lg-4 mt-3 mb-3'>Book Developement</h3>
               <p className='m-0 mb-md-5 mb-2'>Transform your manuscript into a money-making asset with our expert book development services.</p>
 
               <div className='counter-count d-flex text-center justify-content-evenly  align-items-center px-md-4 px-2'>
@@ -62,7 +62,7 @@ const FeaturesSection = () => {
                       start={0}
                       end={355}
                       delay={0}
-                      duration={5}
+                      duration={8}
                       useEasing={true}
                     >
                     </CountUp>
@@ -75,7 +75,7 @@ const FeaturesSection = () => {
 
             <div className="feature">
               <img src={Features3} alt="Feature 3" />
-              <h3 className='fw-bold mt-5 mb-3'>Novel Writers</h3>
+              <h3 className='fw-bold mt-lg-4 mt-3 mb-3'>Novel Writers</h3>
               <p className='m-0 mb-md-5 mb-2'>Unlock earning potential for your novels with our book publication services!</p>
 
 
@@ -88,7 +88,7 @@ const FeaturesSection = () => {
                       start={0}
                       end={412}
                       delay={0}
-                      duration={5}
+                      duration={8}
                       useEasing={true}
                     >
                     </CountUp>

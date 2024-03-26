@@ -5,12 +5,14 @@ import { getStorage } from "firebase/storage";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAlANakiKRtOBW-Cw7zIRs0-lWdimA5JZo",
-  authDomain: "Blossom Book Publication-a42e8.firebaseapp.com",
-  projectId: "Blossom Book Publication-a42e8",
-  storageBucket: "Blossom Book Publication-a42e8.appspot.com",
-  messagingSenderId: "271155471523",
-  appId: "1:271155471523:web:c59aff7ddd0990d5818b16"
+  apiKey: "AIzaSyCkGTDYQpK2moCx0HbYRo7SgO7nKA_LjsI",
+  authDomain: "blossomdatabase.firebaseapp.com",
+  projectId: "blossomdatabase",
+  storageBucket: "blossomdatabase.appspot.com",
+  databaseURL: "https://blossomdatabase-default-rtdb.firebaseio.com",
+  messagingSenderId: "750699402529",
+  appId: "1:750699402529:web:7d791b7294fb69ab275a60",
+  measurementId: "G-RH8YQ26R8B"
 };
 
 const app = initializeApp(firebaseConfig);
